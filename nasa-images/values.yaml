@@ -1,0 +1,41 @@
+# Default values for nasa-images.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+image:
+  repository: dimaj/nasa-images
+  pullPolicy: Always #IfNotPresent
+  # Overrides the image tag whose default is the chart appVersion.
+  tag: ""
+
+nameOverride: ""
+fullnameOverride: ""
+
+api_key: ""
+
+environment:
+  - name: API_KEY
+    value: DEMO_KEY
+
+podAnnotations: {}
+
+service:
+  port: 8080
+
+healthChecks:
+  enabled: true
+  port: 8081
+
+resources:
+  limits:
+    cpu: 100m
+    memory: 128Mi
+  requests:
+    cpu: 100m
+    memory: 128Mi
+
+autoscaling:
+  enabled: true
+  minReplicas: 2
+  maxReplicas: 5
+  targetCPUUtilizationPercentage: 80

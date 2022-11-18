@@ -1,0 +1,6 @@
+.git
+.gitignore
+README.md
+Makefile
+nasa-images
+node_modules

@@ -1,0 +1,22 @@
+{
+  "name": "nasa-images",
+  "version": "1.0.0",
+  "description": "An image fetcher from NASA daily photos API",
+  "main": "index.js",
+  "scripts": {
+    "run": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dimaj/nasa-images.git"
+  },
+  "author": "Dmitry Jerusalimsky",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dimaj/nasa-images/issues"
+  },
+  "homepage": "https://github.com/dimaj/nasa-images#readme",
+  "dependencies": {
+    "axios": "^1.1.3"
+  }
+}
